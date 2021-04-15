@@ -1,0 +1,26 @@
+//q5 Find the intersection and union of sorted arrays
+// Q5 intersection and union of 2 sorted
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)cin>>arr[i];
+    
+    int n1;cin>>n1;
+    int arr1[n1];
+    for(int i=0;i<n1;i++)cin>>arr1[i];
+    cout<<"intersection"<<"  ";
+    for(int i=0;i<n;i++)
+    {
+        for(int i1=0;i1<n1;i1++)
+        {
+            if(arr[i]==arr1[i1])
+            {
+                cout<<arr[i] << " ";
+            }
+        }
+    }
+    
+}
